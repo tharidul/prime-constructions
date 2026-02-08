@@ -89,10 +89,10 @@ export function Home() {
                 <div className="absolute bottom-0 left-0 right-0">
                     <Container>
                         <div className="border-t border-white/10 py-8 grid grid-cols-2 md:grid-cols-4 gap-8">
-                            <MetricCard value={METRICS.yearsExperience} suffix="+" label="Years Experience" />
-                            <MetricCard value={METRICS.projectsCompleted} suffix="+" label="Projects Completed" />
-                            <MetricCard value={METRICS.clientsSatisfied} suffix="+" label="Clients Served" />
-                            <MetricCard value={METRICS.safetyRecord} label="Safe Work Hours" />
+                            <MetricCard value={METRICS.yearsExperience} suffix="+" label="Years Experience" light />
+                            <MetricCard value={METRICS.projectsCompleted} suffix="+" label="Projects Completed" light />
+                            <MetricCard value={METRICS.clientsSatisfied} suffix="+" label="Clients Served" light />
+                            <MetricCard value={METRICS.safetyRecord} label="Safe Work Hours" light />
                         </div>
                     </Container>
                 </div>
