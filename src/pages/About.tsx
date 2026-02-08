@@ -120,10 +120,10 @@ export function About() {
             <Section background="dark">
                 <Container>
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-                        <MetricCard value={METRICS.yearsExperience} suffix="+" label="Years Experience" />
-                        <MetricCard value={METRICS.projectsCompleted} suffix="+" label="Projects Completed" />
-                        <MetricCard value={METRICS.clientsSatisfied} suffix="+" label="Clients Served" />
-                        <MetricCard value={METRICS.employeesCount} suffix="+" label="Team Members" />
+                        <MetricCard value={METRICS.yearsExperience} suffix="+" label="Years Experience" light />
+                        <MetricCard value={METRICS.projectsCompleted} suffix="+" label="Projects Completed" light />
+                        <MetricCard value={METRICS.clientsSatisfied} suffix="+" label="Clients Served" light />
+                        <MetricCard value={METRICS.employeesCount} suffix="+" label="Team Members" light />
                     </div>
                 </Container>
             </Section>
