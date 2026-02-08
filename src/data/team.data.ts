@@ -1,69 +1,80 @@
-import jamesCarter from '../assets/images/team/james-carter.png';
-import sarahMitchell from '../assets/images/team/sarah-mitchell.png';
-
 export interface TeamMember {
     id: string;
     name: string;
     role: string;
     bio: string;
     image: string;
-    linkedin?: string;
-    email?: string;
+    social: {
+        linkedin?: string;
+        twitter?: string;
+        email: string;
+    };
 }
 
 export const teamMembers: TeamMember[] = [
     {
         id: 'james-carter',
         name: 'James Carter',
-        role: 'Chief Executive Officer',
-        bio: '30+ years in construction leadership, driving company vision and strategic growth across the Pacific Northwest.',
-        image: jamesCarter,
-        linkedin: 'https://linkedin.com',
-        email: 'james.carter@primeconstructions.com',
+        role: 'CEO & Founder',
+        bio: 'With over 40 years in construction, James built Prime from a small contractor to a regional leader.',
+        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+        social: {
+            linkedin: '#',
+            email: 'james@primeconstructions.com',
+        },
     },
     {
-        id: 'sarah-mitchell',
-        name: 'Sarah Mitchell',
-        role: 'Chief Operations Officer',
-        bio: 'Operations expert with focus on project delivery optimization and maintaining our safety-first culture.',
-        image: sarahMitchell,
-        linkedin: 'https://linkedin.com',
-        email: 'sarah.mitchell@primeconstructions.com',
+        id: 'sarah-jenkins',
+        name: 'Sarah Jenkins',
+        role: 'VP of Operations',
+        bio: 'Sarah oversees all daily operations, ensuring projects are delivered on time and within budget.',
+        image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80',
+        social: {
+            linkedin: '#',
+            email: 'sarah@primeconstructions.com',
+        },
     },
     {
-        id: 'david-chen',
-        name: 'David Chen',
-        role: 'VP of Engineering',
-        bio: 'Licensed PE with expertise in structural engineering and complex infrastructure projects.',
-        image: jamesCarter, // Reuse James as placeholder/fallback
-        linkedin: 'https://linkedin.com',
-        email: 'david.chen@primeconstructions.com',
-    },
-    {
-        id: 'emily-rodriguez',
-        name: 'Emily Rodriguez',
+        id: 'david-ross',
+        name: 'David Ross',
         role: 'Senior Project Manager',
-        bio: 'Award-winning project manager known for delivering large-scale commercial developments on time and budget.',
-        image: sarahMitchell, // Reuse Sarah as placeholder/fallback
-        linkedin: 'https://linkedin.com',
-        email: 'emily.rodriguez@primeconstructions.com',
+        bio: 'David specializes in large-scale commercial developments and has managed over $500M in projects.',
+        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80',
+        social: {
+            linkedin: '#',
+            email: 'david@primeconstructions.com',
+        },
     },
     {
-        id: 'michael-chang',
-        name: 'Michael Chang',
-        role: 'Safety Director',
-        bio: 'Certified Safety Professional dedicated to maintaining our industry-leading safety record.',
-        image: jamesCarter, // Reuse James as placeholder/fallback
-        linkedin: 'https://linkedin.com',
-        email: 'michael.chang@primeconstructions.com',
+        id: 'emily-chen',
+        name: 'Emily Chen',
+        role: 'Lead Architect',
+        bio: 'Emily brings creative vision and technical precision to every design, focusing on sustainable architecture.',
+        image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80',
+        social: {
+            linkedin: '#',
+            email: 'emily@primeconstructions.com',
+        },
     },
     {
-        id: 'robert-foster',
-        name: 'Robert Foster',
-        role: 'Chief Estimator',
-        bio: '25 years of estimation experience ensuring accurate budgeting and value engineering for clients.',
-        image: jamesCarter, // Reuse James as placeholder/fallback
-        linkedin: 'https://linkedin.com',
-        email: 'robert.foster@primeconstructions.com',
+        id: 'michael-wright',
+        name: 'Michael Wright',
+        role: 'Site Superintendent',
+        bio: 'Michael ensures safety and quality on the ground, bringing practical expertise to every job site.',
+        image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80',
+        social: {
+            email: 'michael@primeconstructions.com',
+        },
+    },
+    {
+        id: 'jessica-williams',
+        name: 'Jessica Williams',
+        role: 'Interior Design Lead',
+        bio: 'Jessica creates functional and inspiring interior spaces that enhance the user experience.',
+        image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80',
+        social: {
+            linkedin: '#',
+            email: 'jessica@primeconstructions.com',
+        },
     },
 ];
