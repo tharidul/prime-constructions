@@ -34,11 +34,11 @@ export function Home() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-screen flex items-center bg-charcoal overflow-hidden">
+            <section className="relative min-h-screen flex flex-col justify-center bg-charcoal overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url(${heroBg})` }} />
                 <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/80 to-transparent" />
 
-                <Container className="relative z-10 pt-24">
+                <Container className="relative z-10 pt-24 pb-12 md:pb-0">
                     <motion.div
                         initial="hidden"
                         animate="visible"
@@ -74,19 +74,19 @@ export function Home() {
                         <motion.div
                             variants={fadeInUp}
                             transition={{ duration: 0.6 }}
-                            className="flex flex-wrap gap-4"
+                            className="flex flex-row gap-3 w-full sm:w-auto"
                         >
-                            <Button as="link" href="/projects" size="lg">
+                            <Button as="link" href="/projects" className="flex-1 sm:flex-none px-4 py-3 text-base sm:px-8 sm:py-4 sm:text-lg">
                                 View Our Work
                             </Button>
-                            <Button as="link" href="/contact" variant="secondary" size="lg" className="text-white border-white hover:bg-white hover:text-charcoal">
+                            <Button as="link" href="/contact" variant="secondary" className="flex-1 sm:flex-none text-white border-white hover:bg-white hover:text-charcoal px-4 py-3 text-base sm:px-8 sm:py-4 sm:text-lg">
                                 Get a Quote
                             </Button>
                         </motion.div>
                     </motion.div>
                 </Container>
 
-                <div className="absolute bottom-0 left-0 right-0">
+                <div className="w-full relative z-20 md:absolute md:bottom-0 md:left-0 md:right-0">
                     <Container>
                         <div className="border-t border-white/10 py-8 grid grid-cols-2 md:grid-cols-4 gap-8">
                             <MetricCard value={METRICS.yearsExperience} suffix="+" label="Years Experience" light />
